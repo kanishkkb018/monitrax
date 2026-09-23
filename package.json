@@ -16,7 +16,8 @@
     "db:generate": "turbo run db:generate",
     "db:push": "turbo run db:push",
     "db:migrate": "turbo run db:migrate",
-    "db:studio": "cd packages/database && npx prisma studio"
+    "db:studio": "cd packages/database && npx prisma studio",
+    "db:deploy": "prisma migrate deploy --schema=packages/database/prisma/schema.prisma",
   },
   "devDependencies": {
     "turbo": "^2.3.3",
